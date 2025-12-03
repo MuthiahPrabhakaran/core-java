@@ -10,4 +10,8 @@ public class CommonUtil {
             LoggerUtil.log("Exception while interrupting the thread - " + e.getMessage());
         }
     }
+
+    public static int noOfCores() {
+        return Runtime.getRuntime().availableProcessors();
+    }
 }
